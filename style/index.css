@@ -74,6 +74,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Work Sans", sans-serif;
+  font-weight: 400;
 }
 
 .wrapper {
@@ -81,12 +82,12 @@ body {
   justify-content: center;
   align-items: flex-start;
   min-height: 100vh;
-  background: hsl(275, 100%, 97%) url(/assets/images/background-pattern-desktop.svg) no-repeat top;
+  background: hsl(275, 100%, 97%) url(./assets/images/background-pattern-desktop.svg) no-repeat fixed top;
   padding: 0 25px;
 }
 @media screen and (max-width: 375px) {
   .wrapper {
-    background: hsl(275, 100%, 97%) url(/assets/images/background-pattern-mobile.svg) no-repeat fixed top;
+    background: hsl(275, 100%, 97%) url(./assets/images/background-pattern-mobile.svg) no-repeat fixed top;
   }
 }
 
