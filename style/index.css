@@ -65,7 +65,7 @@ button {
 
 @font-face {
   font-family: "Work Sans";
-  src: url(/assets/fonts/WorkSans-VariableFont_wght.ttf);
+  src: url(../../../assets/fonts/WorkSans-VariableFont_wght.ttf);
 }
 html {
   font-size: 62.5%;
@@ -73,7 +73,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Work Sans";
   font-weight: 400;
 }
 
@@ -82,12 +82,12 @@ body {
   justify-content: center;
   align-items: flex-start;
   min-height: 100vh;
-  background: hsl(275, 100%, 97%) url(./assets/images/background-pattern-desktop.svg) no-repeat fixed top;
+  background: hsl(275, 100%, 97%) url(../../../assets/images/background-pattern-desktop.svg) no-repeat fixed top left;
   padding: 0 25px;
 }
 @media screen and (max-width: 375px) {
   .wrapper {
-    background: hsl(275, 100%, 97%) url(./assets/images/background-pattern-mobile.svg) no-repeat fixed top;
+    background: hsl(275, 100%, 97%) url(../../../assets/images/background-pattern-mobile.svg) no-repeat fixed top left;
   }
 }
 
