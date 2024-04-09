@@ -3,11 +3,11 @@
     justify-content: center;
     align-items: flex-start;
     min-height: 100vh;
-    background: $light-pink url(/assets/images/background-pattern-desktop.svg) no-repeat top;
+    background: $light-pink url(./assets/images/background-pattern-desktop.svg) no-repeat top;
     padding: 0 25px;
     
     @include sm {
-        background: $light-pink url(/assets/images/background-pattern-mobile.svg) no-repeat fixed top;
+        background: $light-pink url(./assets/images/background-pattern-mobile.svg) no-repeat fixed top;
     }
 }
 
