@@ -1,0 +1,112 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background: $light-pink url(/assets/images/background-pattern-desktop.svg) no-repeat top;
+    padding: 0 25px;
+    
+    @include sm {
+        background: $light-pink url(/assets/images/background-pattern-mobile.svg) no-repeat fixed top;
+    }
+}
+
+.faqs__box {
+    max-width: 600px;
+    padding: 40px 40px 10px;
+    margin-top: 170px;
+    border-radius: 16px;
+    background-color: $white;
+    box-shadow: 3px 3px 20px -6px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 3px 3px 20px -6px rgba(0,0,0,0.3);
+    -moz-box-shadow: 3px 3px 20px -6px rgba(0,0,0,0.3);
+
+    @include sm {
+        padding: 25px 25px 5px;
+        border-radius: 10px;
+        margin-top: 150px;
+    }
+
+    .faqs__header {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+
+        .faqs__title {
+            font-weight: 700;
+            font-size: $fs-larger;
+            color: $dark-purple;
+        }
+        
+        .faqs__star-icon {
+            
+            @include sm {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+
+    .faqs__list {
+        margin-top: 10px;
+
+        .faqs__list-item {
+            padding: 25px 0;
+            transition: color 0.5s linear;
+            gap: 20px;
+
+
+            @include sm {
+                padding: 20px 0;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &:not(:last-child) {
+                border-bottom: 1px solid $light-pink;
+            }
+
+            .faqs__accordion {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 20px;
+                transition: 0.4s;
+
+
+                .faqs__question {
+                    font-size: $fs-ques;
+                    font-weight: 600;
+                    color: $dark-purple;
+                    text-align: left;
+                    line-height: 1.5;
+
+                    &:hover {
+                        color: $grayish-purple;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .faqs__panel {
+                max-height: 0;
+                overflow: hidden;
+                color: $grayish-purple;
+                line-height: 1.5;
+                font-size: $fs-ans; 
+                font-weight: 400; 
+                cursor: text;
+                transition: max-height 0.2s ease-out;
+
+                
+                .faqs__answer {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+
+}
+
