@@ -7,10 +7,10 @@ accordionList.forEach((accordion) => (
         let panel = accordion.nextElementSibling
         if (panel.style.maxHeight) {
             panel.style.maxHeight = null
-            icon.src = "/assets/images/icon-plus.svg"
+            icon.src = "./assets/images/icon-plus.svg"
         } else {
             panel.style.maxHeight = panel.scrollHeight + "px"
-            icon.src = "/assets/images/icon-minus.svg"
+            icon.src = "./assets/images/icon-minus.svg"
         }
     })
 ))
